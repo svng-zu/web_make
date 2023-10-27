@@ -1,0 +1,25 @@
+name : CI/CD AWS S3
+
+on :
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 코드 체크아웃
+        uses: actions/checout@v3
+
+      - name: AWS IAM 사용자 설정
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: AKIAVUV3427FAJA2PBGB
+          aws-secret-access-key: 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
+          aws-region: ap-northeast-2
+      - name: 리액트 빌드
+        run: |
+          npm install
+          npm run build
+          

@@ -21,7 +21,6 @@ jobs:
       - name: 리액트 빌드
         run: |
           npm install
-          npm install react-scripts
           npm run build
       - name: S3 에 업로드
         run: aws s3 sync build/ s3://itbambucket --acl public-read

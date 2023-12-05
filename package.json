@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "aws-sdk": "^2.1481.0"
-  }
+  },
   "scripts":{
     "build": "react-scripts build"
   }

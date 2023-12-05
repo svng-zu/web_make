@@ -15,8 +15,8 @@ jobs:
       - name: AWS IAM 사용자 설정
         uses: aws-actions/configure-aws-credentials@v2
         with:
-          aws-access-key-id: ${{ AWS_ACCESS_SECRET_ID }}
-          aws-secret-access-key: ${{ AWS_ACCESS_SECRET_KEY }}
+          aws-access-key-id: ${{ AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-northeast-2
       - name: 리액트 빌드
         run: |

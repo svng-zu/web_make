@@ -2,7 +2,4 @@
   "dependencies": {
     "aws-sdk": "^2.1481.0"
   }
-  "scripts": {
-    "build": "echo 'No build process defined'"
-  }
 }
